@@ -7,16 +7,46 @@
   grid-template-columns: 1fr 1fr 1.5fr;
 }
 
+.logo {
+  text-align: left;
+  padding-left: 17px;
+  padding-bottom: 20px;
+}
+
+.btn-info {
+  background-color: rgb(29, 155, 240) !important;
+  color: white !important;
+  border-radius: 20px !important;
+  font-size: 17px !important;
+}
+.tweetBtnNav {
+  width: 100% !important;
+  margin-top: 30px;
+  
+}
+.tweetBtnMain {
+  width: 100% !important;
+}
+.tweetBtnNavInner {
+  background-color: rgb(29, 155, 240);
+  color: white;
+  border-radius: 30px;
+  height: 50px;
+  font-size: 17px;
+  text-align: center;
+  padding: 12px 0;
+  width: 80%;
+}
 
 .flex-column {
-  margin-top: 100px;
-  margin-left: 100px;
+  margin-top: 10px;
+  margin-left: 27%;
   position: sticky;
   text-align: center;
   top: 0px
 }
 .navElem {
-  font-size: 20px;
+  font-size: 22px;
   text-align: left;
   border-radius: 25px;
   padding-left: 10px;
@@ -29,13 +59,33 @@
   cursor: pointer;
 }
 .navIcons {
-  margin-right: 10px;
+  margin-right: 20px;
   padding-bottom: 5px;
+  margin-left: 10px;
 }
 .homeIcon {
-  margin-right: 4px !important;
+  margin-right: 16px;
 }
-
+.explIcon {
+  margin-right: 18px;
+  margin-left: 6px;
+}
+.notiIcon {
+  margin-right: 18px;
+  margin-left: 6px;
+}
+.bookIcon {
+  margin-right: 22px;
+  margin-left: 12px;
+}
+.listIcon {
+  margin-right: 22px;
+  margin-left: 12px;
+}
+.moreIcon {
+  margin-right: 22px;
+  margin-left: 12px;
+}
 
 .bigTweet {
   border-top: 1px solid rgb(201, 201, 201);

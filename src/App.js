@@ -4,7 +4,7 @@ import Form from 'react-bootstrap/Form';
 import Nav from 'react-bootstrap/Nav';
 import Container from 'react-bootstrap/Container'
 import { AiFillHome, AiOutlineMail } from 'react-icons/ai'
-import { BsHash, BsBookmark, BsPerson } from 'react-icons/bs'
+import { BsHash, BsBookmark, BsPerson, BsTwitter } from 'react-icons/bs'
 import { MdOutlineNotificationsNone } from 'react-icons/md'
 import { RiFileList2Line } from 'react-icons/ri'
 import { CgMoreO } from 'react-icons/cg'
@@ -21,16 +21,16 @@ function App() {
         
           <Nav defaultActiveKey="/home" className="flex-column">
             <Container>
-              <div className='logo'></div>
-              <div className='navWrap' style={{width: navItems[0].length * 30 +'px'}}><Nav.Item className='navElem'><span className='navIcons homeIcon'><AiFillHome size='1.2em'></AiFillHome></span> <span className='navWords'>Home</span></Nav.Item></div>
-              <div className='navWrap' style={{width: navItems[1].length * 19 +'px'}}><Nav.Item className='navElem'><span className='navIcons'><BsHash size='1.2em'></BsHash></span><span className='navWords'>Explore</span></Nav.Item></div>
-              <div className='navWrap' style={{width: navItems[2].length * 14 +'px'}}><Nav.Item className='navElem'><span className='navIcons'><MdOutlineNotificationsNone size='1.2em'></MdOutlineNotificationsNone></span><span className='navWords'>Notifications</span></Nav.Item></div>
-              <div className='navWrap' style={{width: navItems[3].length * 19 +'px'}}><Nav.Item className='navElem'><span className='navIcons'><AiOutlineMail size='1.2em'></AiOutlineMail></span><span className='navWords'>Messages</span></Nav.Item></div>
-              <div className='navWrap' style={{width: navItems[4].length * 20 +'px'}}><Nav.Item className='navElem'><span className='navIcons'><BsBookmark size='1.2em'></BsBookmark></span><span className='navWords'>Bookmarks</span></Nav.Item></div>
-              <div className='navWrap' style={{width: navItems[5].length * 11 +'px'}}><Nav.Item className='navElem'><span className='navIcons'><RiFileList2Line size='1.2em'></RiFileList2Line></span><span className='navWords'>Lists</span></Nav.Item></div>
-              <div className='navWrap' style={{width: navItems[6].length * 24 +'px'}}><Nav.Item className='navElem'><span className='navIcons'><BsPerson size='1.2em'></BsPerson></span><span className='navWords'>Profile</span></Nav.Item></div>
-              <div className='navWrap' style={{width: navItems[7].length * 16 +'px'}}> <Nav.Item className='navElem'><span className='navIcons'><CgMoreO size='1.2em'></CgMoreO></span><span className='navWords'>More</span></Nav.Item></div>
-              <div className='navWrap'><Nav.Item className='tweetBtn'> <Button variant="info">Tweet</Button>{' '}</Nav.Item></div>
+              <div className='navWrap logo'><BsTwitter size='1.8em' color='rgb(29, 155, 240)'></BsTwitter></div>
+              <div className='navWrap' style={{width: navItems[0].length * 37 +'px'}}><Nav.Item className='navElem'><span className='navIcons homeIcon'><AiFillHome size='1.2em'></AiFillHome></span> <span className='navWords'>Home</span></Nav.Item></div>
+              <div className='navWrap' style={{width: navItems[1].length * 24 +'px'}}><Nav.Item className='navElem'><span className='navIcons explIcon'><BsHash size='1.6em'></BsHash></span><span className='navWords'>Explore</span></Nav.Item></div>
+              <div className='navWrap' style={{width: navItems[2].length * 17 +'px'}}><Nav.Item className='navElem'><span className='navIcons notiIcon'><MdOutlineNotificationsNone size='1.6em'></MdOutlineNotificationsNone></span><span className='navWords'>Notifications</span></Nav.Item></div>
+              <div className='navWrap' style={{width: navItems[3].length * 24 +'px'}}><Nav.Item className='navElem'><span className='navIcons messIcon'><AiOutlineMail size='1.4em'></AiOutlineMail></span><span className='navWords'>Messages</span></Nav.Item></div>
+              <div className='navWrap' style={{width: navItems[4].length * 25 +'px'}}><Nav.Item className='navElem'><span className='navIcons bookIcon'><BsBookmark size='1.2em'></BsBookmark></span><span className='navWords'>Bookmarks</span></Nav.Item></div>
+              <div className='navWrap' style={{width: navItems[5].length * 15 +'px'}}><Nav.Item className='navElem'><span className='navIcons listIcon'><RiFileList2Line size='1.2em'></RiFileList2Line></span><span className='navWords'>Lists</span></Nav.Item></div>
+              <div className='navWrap' style={{width: navItems[6].length * 31 +'px'}}><Nav.Item className='navElem'><span className='navIcons profIcon'><BsPerson size='1.4em'></BsPerson></span><span className='navWords'>Profile</span></Nav.Item></div>
+              <div className='navWrap' style={{width: navItems[7].length * 21 +'px'}}> <Nav.Item className='navElem'><span className='navIcons moreIcon'><CgMoreO size='1.2em'></CgMoreO></span><span className='navWords'>More</span></Nav.Item></div>
+              <div className='tweetBtnNav'><Nav.Item className='tweetBtn'> <div className='tweetBtnNavInner'><strong>Tweet</strong></div>{' '}</Nav.Item></div>
             </Container>
           </Nav>
         </div>
@@ -41,7 +41,7 @@ function App() {
             <Form>
               <Form.Group>
                 <div className='tweetBoxDiv'><Form.Control type="email" placeholder="What's happening?" /></div>
-                <div className='attachmentsPollsExtra'><Button variant="info">Tweet</Button>{' '}</div>
+                <div className='attachmentsPollsExtra tweetBtnMain'><Button variant="info"><strong>Tweet</strong></Button>{' '}</div>
               </Form.Group>
             </Form>
           
