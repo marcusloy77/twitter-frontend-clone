@@ -1,0 +1,63 @@
+.App {
+  text-align: center;
+}
+
+.collumnWrapper {
+  display: grid;
+  grid-template-columns: 1fr 1fr 1.5fr;
+}
+
+
+.flex-column {
+  margin-top: 100px;
+  margin-left: 100px;
+  position: sticky;
+  text-align: center;
+  top: 0px
+}
+.navElem {
+  font-size: 20px;
+  text-align: left;
+  border-radius: 25px;
+  padding-left: 10px;
+  padding-top: 10px;
+  padding-bottom: 10px;
+  height: 54px;
+}
+.navWrap :hover {
+  background: rgb(223, 223, 223);
+  cursor: pointer;
+}
+.navIcons {
+  margin-right: 10px;
+  padding-bottom: 5px;
+}
+.homeIcon {
+  margin-right: 4px !important;
+}
+
+
+.bigTweet {
+  border-top: 1px solid rgb(201, 201, 201);
+
+  margin-top: 0px;
+  margin-bottom: 0px;
+  text-align: left;
+  overflow: hidden;
+}
+
+.tweet {
+  margin-top: 5px;
+  margin-bottom: 5px;
+}
+
+.tweetName {
+  
+}
+.tweetContent {
+  text-align: center;
+}
+
+.tweetLikes {
+  text-align: right;
+}
