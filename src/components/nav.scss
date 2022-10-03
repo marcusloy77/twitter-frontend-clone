@@ -1,0 +1,73 @@
+.logo {
+	text-align: left;
+	padding-left: 17px;
+	padding-bottom: 20px;
+}
+
+.btn-info {
+	background-color: rgb(29, 155, 240) !important;
+	color: white !important;
+	border-radius: 20px !important;
+	font-size: 17px !important;
+}
+.tweetBtnNav {
+	width: 100% !important;
+	margin-top: 30px;
+
+}
+
+.flex-column {
+	margin-top: 10px;
+	margin-left: 27%;
+	position: sticky;
+	text-align: center;
+	top: 0px
+}
+.navElem {
+	font-size: 22px;
+	text-align: left;
+	border-radius: 25px;
+	padding-left: 10px;
+	padding-top: 10px;
+	padding-bottom: 10px;
+	height: 54px;
+}
+
+.navWrap {
+	margin-top: 3px;
+}
+.navWrap :hover{
+	background: rgb(223, 223, 223);
+	cursor: pointer;
+}
+.logo :hover {
+	background: inherit;
+}
+.navIcons {
+	margin-right: 20px;
+	padding-bottom: 5px;
+	margin-left: 10px;
+}
+.homeIcon {
+	margin-right: 16px;
+}
+.explIcon {
+	margin-right: 18px;
+	margin-left: 6px;
+}
+.notiIcon {
+	margin-right: 18px;
+	margin-left: 6px;
+}
+.bookIcon {
+	margin-right: 22px;
+	margin-left: 12px;
+}
+.listIcon {
+	margin-right: 22px;
+	margin-left: 12px;
+}
+.moreIcon {
+	margin-right: 22px;
+	margin-left: 12px;
+}
